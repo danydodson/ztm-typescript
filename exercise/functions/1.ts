@@ -10,3 +10,16 @@
 import { strict as assert } from "assert";
 
 
+function fName() {
+  console.log("Dany");
+};
+
+function lName() {
+  console.log("Dodson");
+};
+
+function printName(fn, ln) {
+  return fn + ln;
+};
+
+printName(fName(), lName());

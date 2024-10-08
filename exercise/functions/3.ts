@@ -19,7 +19,13 @@
 
 import { strict as assert } from "assert";
 
+function calculateAverage(a, b, c) {
+  return (a + b + c) / 3;
+}
 
+function isAboveThreshold(a, t) {
+  return a > t ? true : false;
+}
 //
 // Test cases
 assert.equal(calculateAverage(10, 20, 30), 20);

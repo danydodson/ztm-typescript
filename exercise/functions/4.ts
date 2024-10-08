@@ -17,6 +17,17 @@
 
 import { strict as assert } from "assert";
 
+function isSenior(age) {
+  return age >= 65 ? true : false;
+}
+
+function isLargePurchase(amount) {
+  return amount > 99 ? true : false;
+}
+
+function isEligibleForDiscount(age, amount) {
+  return isSenior(age) || isLargePurchase(amount) ? true : false;
+}
 
 // 
 // Test cases
