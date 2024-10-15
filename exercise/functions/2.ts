@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // You are developing a application to manage a set of basic operations related
 // to geometric shapes. The application should be able to calculate the area of
 // a rectangle, the perimeter of a rectangle, and the area of a circle. You'll
@@ -17,17 +19,17 @@
 
 import { strict as assert } from "assert";
 
-function calculateRectangleArea(w, h) {
+function calculateRectangleArea(w: number, h: number) {
   return w * h;
 }
 
-function calculateRectanglePerimeter(w, h) {
-  return ((w + h) * 2);
+function calculateRectanglePerimeter(w: number, h: number) {
+  return (w + h) * 2;
 }
 
-function calculateCircleArea(r) {
+function calculateCircleArea(r: number) {
   const p = Math.round(Math.PI * 100) / 100;
-  return (p * (r * r));
+  return p * (r * r);
 }
 
 //
@@ -35,4 +37,3 @@ function calculateCircleArea(r) {
 assert.equal(calculateRectangleArea(5, 10), 50);
 assert.equal(calculateRectanglePerimeter(5, 10), 30);
 assert.equal(calculateCircleArea(7), 153.86);
-

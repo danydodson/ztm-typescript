@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // Using functions and template literals, print out your first and last name.
 //
 // Requirements:
